@@ -1,4 +1,4 @@
-.main{
+.main {
     width: 100vw;
     height: 100vh;
     background-image: url(/bg5.jpg);
@@ -11,11 +11,11 @@
     justify-content: center;
 }
 
-.logo{
+.logo {
     border-radius: 30px;
 }
 
-.parent{
+.parent {
     height: 440px;
     width: 340px;
     display: flex;
@@ -28,18 +28,20 @@
     row-gap: 30px;
     border: solid white 1px;
     border-radius: 20px;
+
 }
 
-.child2{
+.child2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     row-gap: 10px;
+    padding: 5px;
 }
 
-.srtbtn{
+.srtbtn {
     height: 45px;
     width: 120px;
     font-size: large;
