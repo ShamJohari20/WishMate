@@ -18,7 +18,7 @@ function Home() {
 
                     <img className={style.logo} src="/logo2.png" width={150}/>
                     <div className={style.child2}>
-                        <h1>Welcome to Wishmate💌</h1>
+                        <h2>Welcome to Wishmate💌</h2>
                         <p>Celebrate Every Birthday Automatically...🎂💖</p>
                         <button onClick={goToLogin} className={style.srtbtn}>Start</button>
                     </div>
