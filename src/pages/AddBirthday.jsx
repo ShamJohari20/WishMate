@@ -10,6 +10,8 @@ function AddBirthday() {
   const [email, setEmail] = useState('');
   const [whatsappno, setWhatsappno] = useState('');
   const [from, setFrom] = useState('');
+  const today = new Date().toISOString().split('T')[0];
+  const [date, setDate] = useState(today);
 
 
   const auth = getAuth();
@@ -67,7 +69,7 @@ function AddBirthday() {
               <div className={style.form}>
                 <label className={style.lbl}>Birthdate</label>
                 <input className={style.inp} type="date"
-                  value={birthdate} onChange={(e) => setBirthdate(e.target.value)} />
+                  value={date} onChange={(e) => setBirthdate(e.target.value)} />
               </div>
 
               <div className={style.form}>
@@ -84,7 +86,7 @@ function AddBirthday() {
 
               <div className={style.form}>
                 <label className={style.lbl}>From</label>
-                <input className={style.inp} type="tel" placeholder="Enter Your Name"
+                <input className={style.inp} type="text" placeholder="Enter Your Name"
                   value={from} onChange={(e) => setFrom(e.target.value)} />
               </div>
 
