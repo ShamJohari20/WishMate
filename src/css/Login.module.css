@@ -1,0 +1,86 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    border-radius: 30px;
+}
+
+.parent{
+    height: 440px;
+    width: 369px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(203, 83, 173, 0.641);
+    color: white;
+    row-gap: 20px;
+    border: solid white 1px;
+    border-radius: 20px;
+}
+
+.child2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.srtbtn{
+    height: 45px;
+    width: 120px;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    outline: none;
+    color: white;
+    border: solid white 2px;
+    background-color: rgb(51, 179, 202);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    column-gap: 20px;
+}
+
+.inp{
+    height: 40px;
+    width: 200px;
+    float: right;
+    border-radius: 25px;
+    text-align: center;
+    border-style: none;
+    outline: none;
+}
+
+.lbl{
+    float: left;
+    width: 80px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.go{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,89 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(134, 66, 196, 0.524);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.parent {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(134, 66, 196, 0.524); */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.child1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.child2 {
+    height: 380px;
+    width: 350px;
+    background-color: rgb(196, 220, 255);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    border-radius: 20px;
+}
+
+.mainform{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 9px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Or use row if you want label/input side by side */
+    row-gap: 5px;
+}
+
+.lbl {
+    align-self: flex-start; /* Keeps label to the left */
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.inp {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.abdbtn{
+    height: 30px;
+    width: 100px;
+    background-color: blueviolet;
+    font-size: larger;
+    font-weight: 500;
+    border: solid 2px palevioletred;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    padding: 0px 5px 2px 5px;
+    cursor: pointer;
+}
