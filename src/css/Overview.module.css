@@ -1,0 +1,102 @@
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #98b2ce;
+  color: white;
+}
+
+.logoImage {
+  width: 50px;
+  height: 50px;
+  /* object-fit: contain; */
+  border-radius: 17px;
+}
+
+.projectName h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.headerLinks {
+  display: flex;
+  gap: 7px;
+  text-decoration: none;
+  justify-content: right;
+}
+
+.headerLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.headerLink:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Styles */
+.container {
+  height: 86.5vh;
+  width: 100vw;
+  background-color: rgba(255, 127, 242, 0.574);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.main{
+  width: 330px;
+  height: 370px;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: solid rgb(94, 168, 189) 2px;
+  border-radius: 20px;
+  padding: 3px;
+}
+
+.p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #be37c0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.quote {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #666;
+}

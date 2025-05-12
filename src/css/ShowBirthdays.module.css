@@ -1,0 +1,72 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(137, 43, 226, 0.528);
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+/* .parent{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+} */
+
+.child1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.child2{
+    height: 80%;
+    width: 90%;
+    background-color: rgba(161, 179, 195, 0.721);
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    padding: 0 10px 0 10px;
+    border-radius: 20px;
+}
+
+.child3{
+    /* height: 80%;
+    width: 90%; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    /* border: solid 2px wheat; */
+    border-radius: 20px;
+}
+.wish{
+    /* height: 80%;
+    width: 90%; */
+    background-color: rgba(240, 255, 255, 0.429);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    border: solid 2px rgb(33, 192, 220);
+    border-radius: 3px;
+    padding: 10px;
+    border-radius: 20px;
+}

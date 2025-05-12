@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { getAuth } from 'firebase/auth';
 import AddBirthday from './AddBirthday';
+import Overview from './Overview';
 
 
 function Login() {
@@ -20,7 +21,7 @@ function Login() {
         // Signed in 
         const user = userCredential.user;
         alert('Login Sucessfull')
-        navigate('/AddBirthday') 
+        navigate('/Overview') 
         // ...
       })
       .catch((error) => {

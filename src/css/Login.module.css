@@ -68,7 +68,8 @@
     width: 200px;
     float: right;
     border-radius: 25px;
-    text-align: center;
+    /* text-align: center; */
+    padding-left: 10px;
     border-style: none;
     outline: none;
 }
