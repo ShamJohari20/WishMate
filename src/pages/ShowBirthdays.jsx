@@ -67,7 +67,7 @@ function ShowBirthdays() {
 
             {wishes.map((wish) => (
               <div className={style.wish} key={wish.id}>
-                <p>{wish.name}</p>
+                <p className={style.name}>{wish.name}</p>
                 <p>{wish.birthdate} </p>
                 <p>{wish.email} </p>
                 <p>{wish.whatsappno} </p>

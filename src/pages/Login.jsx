@@ -20,12 +20,12 @@ function Login() {
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
-        alert('Login Sucessfull')
+        alert('You have logged in successfully.')
         navigate('/Overview') 
         // ...
       })
       .catch((error) => {
-        alert('Wrong Credential or User Not Register')
+        alert('Invalid credentials or user not registered.')
         const errorCode = error.code;
         const errorMessage = error.message;
       });
@@ -47,7 +47,7 @@ function Login() {
 
             <div className={style.form}>
               <label className={style.lbl}>Email</label>
-              <input className={style.inp} type="email" placeholder='Enter Your Mail'
+              <input className={style.inp} type="email" placeholder='Enter Your Email'
                 value={email}
                 onChange={(event) => { setEmail(event.target.value) }}
               />
@@ -63,7 +63,7 @@ function Login() {
 
             <button onClick={loginUser} className={style.srtbtn}>Login</button>
 
-            <Link to={"/Signup"} className={style.go}>Not Register? SignUp</Link>
+            <Link to={"/Signup"} className={style.go}>New here? Sign up</Link>
 
           </div>
 

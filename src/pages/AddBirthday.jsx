@@ -25,12 +25,12 @@ function AddBirthday() {
 
   const saveBirthday = async () => {
     if (!name || !birthdate || !email || !whatsappno || !from) {
-      alert("All fields are required");
+      alert("All fields must be filled out.");
       return;
     }
 
     if (!userUID) {
-      alert("You must be logged in to save Credential");
+      alert("You must be logged in to same Credential");
       return;
     }
 
@@ -52,7 +52,7 @@ function AddBirthday() {
         from
       });
 
-      alert("Birthday saved successfully Enjoy..!");
+      alert("Birthday saved successfully! Enjoy!");
 
       // Reset form
       setName('');
@@ -77,7 +77,7 @@ function AddBirthday() {
             <div className={style.mainform}>
               <div className={style.form}>
                 <label className={style.lbl}>Name</label>
-                <input className={style.inp} type="text" placeholder="Enter the name of your special person"
+                <input className={style.inp} type="text" placeholder="Please provide the name of your special person."
                   value={name} onChange={(e) => setName(e.target.value)} />
               </div>
 
@@ -89,19 +89,19 @@ function AddBirthday() {
 
               <div className={style.form}>
                 <label className={style.lbl}>Email</label>
-                <input className={style.inp} type="email" placeholder="Enter Email"
+                <input className={style.inp} type="email" placeholder="Please enter the email of your special person."
                   value={email} onChange={(e) => setEmail(e.target.value)} />
               </div>
 
               <div className={style.form}>
                 <label className={style.lbl}>WhatsApp</label>
-                <input className={style.inp} type="tel" placeholder="Enter WhatsApp no"
+                <input className={style.inp} type="tel" placeholder="Enter the WhatsApp no of your special person."
                   value={whatsappno} onChange={(e) => setWhatsappno(e.target.value)} />
               </div>
 
               <div className={style.form}>
                 <label className={style.lbl}>From</label>
-                <input className={style.inp} type="text" placeholder="Enter Your Name"
+                <input className={style.inp} type="text" placeholder="Enter your name."
                   value={from} onChange={(e) => setFrom(e.target.value)} />
               </div>
               
@@ -110,7 +110,7 @@ function AddBirthday() {
 
             <button onClick={saveBirthday} className={style.abdbtn}>Set 💌</button>
           </div>
-          <Link to={'/UserGuide'} className={style.lnk}>How to fill the form</Link>
+          <Link to={'/UserGuide'} className={style.lnk}>How to fill out the form.</Link>
         </div>
       </div>
     </>

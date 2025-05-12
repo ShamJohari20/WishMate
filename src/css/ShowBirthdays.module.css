@@ -71,6 +71,11 @@
     border-radius: 20px;
 }
 
+.name{
+    font-weight: 600;
+    font-size: large;
+}
+
 .loadingContainer {
     display: flex;
     flex-direction: column;

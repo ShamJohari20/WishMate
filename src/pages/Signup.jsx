@@ -15,7 +15,7 @@ function Signup() {
 
   const signupUser = async () => {
     if (!name || !email || !password) {
-      alert("All fields are required.");
+      alert("Please fill in all fields.");
       return;
     }
 
@@ -64,7 +64,7 @@ function Signup() {
             <input
               className={style.inp}
               type="email"
-              placeholder="Enter Your Mail"
+              placeholder="Enter Your Email"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
             />
@@ -83,7 +83,7 @@ function Signup() {
 
           <button onClick={signupUser} className={style.srtbtn}>Signup</button>
 
-          <Link to="/Login" className={style.go}>Already Registered? Login</Link>
+          <Link to="/Login" className={style.go}>Already registered? Log in</Link>
         </div>
       </div>
     </div>

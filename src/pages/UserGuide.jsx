@@ -12,13 +12,13 @@ function UserGuide() {
                         To make sure birthday wishes are sent on the correct date and to the right person, please carefully follow the instructions below.
                     </p>
 
-                    <h2 className={styles.subTitle}>Field-by-Field Guidance</h2>
+                    <h2 className={styles.subTitle}>Field by Field Guidance</h2>
                     <ul className={styles.list}>
                         <li><strong>Name:</strong> Enter the full name of your special person  (e.g. <em>Virat Kohli</em>).</li>
 
                         <li>
                             <strong>Birthdate:</strong>
-                            Select the person’s <strong>actual birthdate including correct year</strong> (not the current year)!
+                            Select the person’s <strong>actual birthdate including correct year</strong> (not the current year).
                             <ul className={styles.subList}>
                                 <li>Correct: <code>2001-08-27</code></li>
                                 <li>Incorrect: <code>2025-08-27</code></li>
@@ -48,10 +48,10 @@ function UserGuide() {
                     </div>
                     <br />
                     <div className={styles.noticeBox}>
-                        <p><strong>Free Version Notice:</strong> In the free version of WishMate, birthday wishes will only be sent via <strong>Email</strong>. WhatsApp and SMS support is coming soon in the premium version.</p>
+                        <p><strong>Free Version Notice:</strong> In the free version of WishMate, birthday wishes will only be sent via <strong>Email between 12:00 AM to 1:00 AM</strong>. WhatsApp and SMS support is coming soon in the premium version.</p>
                     </div>
 
-                    <p className={styles.footer}>🎉 Once everything is filled correctly, click <strong>Set 💌</strong> – WishMate will take care of the rest!</p>
+                    <p className={styles.footer}>🎉 Once everything is filled correctly, click <strong>Set 💌</strong> WishMate will take care of the rest!</p>
                 </div>
             </div>
         </>
