@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import style from '../css/AddBirthday.module.css';
 import { db } from './Firebase';
-import { collection, addDoc, doc } from 'firebase/firestore';
+// import { collection, addDoc, doc } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
+import { doc, setDoc, getDoc, collection, addDoc } from 'firebase/firestore';
+
 
 function AddBirthday() {
+  const today = new Date().toISOString().split('T')[0];
+  const [date, setDate] = useState(today);
   const [name, setName] = useState('');
-  const [birthdate, setBirthdate] = useState('');
+  const [birthdate, setBirthdate] = useState(date);
   const [email, setEmail] = useState('');
   const [whatsappno, setWhatsappno] = useState('');
   const [from, setFrom] = useState('');
-  const today = new Date().toISOString().split('T')[0];
-  const [date, setDate] = useState(today);
+
 
 
   const auth = getAuth();
@@ -30,7 +33,15 @@ function AddBirthday() {
     }
 
     try {
-      // Save the birthday data under the current user's UID in the "birthdays" subcollection
+      // Ensure user document exists with UID as document ID
+      const userDocRef = doc(db, 'users', userUID);
+      const userSnapshot = await getDoc(userDocRef);
+
+      if (!userSnapshot.exists()) {
+        await setDoc(userDocRef, { createdAt: new Date().toISOString() });
+      }
+
+      // Add birthday to subcollection under user UID
       await addDoc(collection(db, 'users', userUID, 'birthdays'), {
         name,
         birthdate,
@@ -38,6 +49,7 @@ function AddBirthday() {
         whatsappno,
         from
       });
+
       alert("Birthday saved successfully Enjoy..!");
 
       // Reset form
@@ -45,6 +57,7 @@ function AddBirthday() {
       setBirthdate('');
       setEmail('');
       setWhatsappno('');
+      setFrom('');
     } catch (error) {
       alert("Error saving birthday: " + error.message);
     }
@@ -69,7 +82,7 @@ function AddBirthday() {
               <div className={style.form}>
                 <label className={style.lbl}>Birthdate</label>
                 <input className={style.inp} type="date"
-                  value={date} onChange={(e) => setBirthdate(e.target.value)} />
+                  value={birthdate} onChange={(e) => setBirthdate(e.target.value)} />
               </div>
 
               <div className={style.form}>
