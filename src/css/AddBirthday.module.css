@@ -87,3 +87,11 @@
     padding: 0px 5px 2px 5px;
     cursor: pointer;
 }
+
+.lnk{
+    text-decoration: none;
+}
+
+.lnk:hover{
+    text-decoration: underline;
+}

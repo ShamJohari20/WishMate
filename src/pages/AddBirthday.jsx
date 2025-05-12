@@ -4,6 +4,8 @@ import { db } from './Firebase';
 // import { collection, addDoc, doc } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 import { doc, setDoc, getDoc, collection, addDoc } from 'firebase/firestore';
+import { Link } from 'react-router-dom';
+import UserGuide from './UserGuide';
 
 
 function AddBirthday() {
@@ -102,11 +104,13 @@ function AddBirthday() {
                 <input className={style.inp} type="text" placeholder="Enter Your Name"
                   value={from} onChange={(e) => setFrom(e.target.value)} />
               </div>
+              
 
             </div>
 
             <button onClick={saveBirthday} className={style.abdbtn}>Set 💌</button>
           </div>
+          <Link to={'/UserGuide'} className={style.lnk}>How to fill the form</Link>
         </div>
       </div>
     </>

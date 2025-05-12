@@ -39,7 +39,15 @@ function ShowBirthdays() {
     return () => unsubscribe(); // cleanup
   }, []);
 
-  if (loading) return <p>Loading birthdays...</p>;
+  if (loading) {
+    return (
+      <div className={style.loadingContainer}>
+        <div className={style.spinner}></div>
+        <p className={style.loadingText}>Loading birthdays...</p>
+      </div>
+    );
+  }
+
 
   return (
     <>
@@ -47,29 +55,29 @@ function ShowBirthdays() {
 
 
 
-          <div className={style.child1}>
-            <h2>Saved Birthdays 🎉</h2>
-          </div>
+        <div className={style.child1}>
+          <h2>Saved Birthdays 🎉</h2>
+        </div>
 
-          {/* <div className={style.child2}> */}
-            {wishes.length === 0 ? (
-              <h1>No birthdays found.</h1>
-            ) : (
-              <div className={style.child3}>
-                
-                  {wishes.map((wish) => (
-                    <div className={style.wish} key={wish.id}>
-                      <p>{wish.name}</p> 
-                      <p>{wish.birthdate} </p>
-                      <p>{wish.email} </p>
-                      <p>{wish.whatsappno} </p>
-                      <p>From: {wish.from}</p>
-                    </div>
-                  ))}
-                
+        {/* <div className={style.child2}> */}
+        {wishes.length === 0 ? (
+          <h1>No birthdays found.</h1>
+        ) : (
+          <div className={style.child3}>
+
+            {wishes.map((wish) => (
+              <div className={style.wish} key={wish.id}>
+                <p>{wish.name}</p>
+                <p>{wish.birthdate} </p>
+                <p>{wish.email} </p>
+                <p>{wish.whatsappno} </p>
+                <p>From: {wish.from}</p>
               </div>
-            )}
-          {/* </div> */}
+            ))}
+
+          </div>
+        )}
+        {/* </div> */}
 
 
       </div>

@@ -1,0 +1,32 @@
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#fc5c7d, #6a82fb);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff3cd;
+    border-top: 5px solid #f57f17;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+.loadingText {
+    font-size: 1.2rem;
+    color: #4a2f00;
+    font-weight: bold;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

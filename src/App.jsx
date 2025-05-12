@@ -7,6 +7,7 @@ import Protected from './pages/Protected'
 import AddBirthday from './pages/AddBirthday'
 import ShowBirthdays from './pages/ShowBirthdays'
 import Overview from './pages/Overview'
+import UserGuide from './pages/UserGuide'
 
 
 
@@ -23,6 +24,7 @@ function App() {
             <Route path='/AddBirthday' element={<Protected Component={AddBirthday} />}></Route>
             <Route path="/ShowBirthdays" element={<Protected Component={ShowBirthdays} />} />
             <Route path="/Overview" element={<Protected Component={Overview} />} />
+            <Route path="/UserGuide" element={<Protected Component={UserGuide} />} />
           </Routes>
         </BrowserRouter>
       </>
