@@ -37,13 +37,13 @@ function Overview() {
               <button className={style.btn}>Add Birthday 💌</button>
             </Link>
             <Link to="/ShowBirthdays">
-              <button className={style.btn}>View Birthdays 🎈</button>
+              <button className={style.btn}>View Birthdays 🙈</button>
             </Link>
           </div>
 
           <div className={style.quote}>
-            <p>🎁 Don’t Just Remember Make It Memorable
-              Schedule once, celebrate forever. 💖</p>
+            <p>🎁Don’t Just Remember Make It Memorable
+              Schedule once, celebrate forever.💖</p>
           </div>
         </div>
       </div>

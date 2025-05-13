@@ -20,8 +20,8 @@ function UserGuide() {
                             <strong>Birthdate:</strong>
                             Select the person’s <strong>actual birthdate including correct year</strong> (not the current year).
                             <ul className={styles.subList}>
-                                <li>Correct: <code>2001-08-27</code></li>
-                                <li>Incorrect: <code>2025-08-27</code></li>
+                                <li>Correct:   2001-08-27</li>
+                                <li>Incorrect: 2025-08-27</li>
                             </ul>
                             <p>This helps WishMate remember their real age and schedule wishes accurately.</p>
                         </li>
@@ -43,7 +43,7 @@ function UserGuide() {
                         <p><strong>Name:</strong> Virat Kohli</p>
                         <p><strong>Birthdate:</strong> 2001-08-27 </p>
                         <p><strong>Email:</strong> virat.kohli@gmail.com</p>
-                        <p><strong>WhatsApp No:</strong> +919812345678</p>
+                        <p><strong>WhatsApp No:</strong> +919876543210</p>
                         <p><strong>From:</strong> Anushka</p>
                     </div>
                     <br />
